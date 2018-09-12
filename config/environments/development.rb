@@ -35,12 +35,12 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-
+  config.action_mailer.perform_deliveries = true
   
 
   config.action_mailer.delivery_method = :test
 
-  config.action_mailer.default_url_options = { :host => 'http://localhost:3000/users/sign_up'}
+  config.action_mailer.default_url_options = { :host => 'http://localhost:3000'}
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
