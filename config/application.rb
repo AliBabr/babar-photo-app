@@ -9,6 +9,7 @@ Bundler.require(*Rails.groups)
 
 
 
+
 module PhotoApp
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
